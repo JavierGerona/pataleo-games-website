@@ -15,7 +15,7 @@ html, body {
         height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-between; /* rellena la pantalla */
+        justify-content: space-between;
         overflow: hidden;
     }
 
@@ -47,7 +47,7 @@ header h1 {
 }
 
 .description {
-    font-size: 1.5rem; /* igual que los títulos */
+    font-size: 1rem; /* igual que los títulos de los juegos */
     max-width: 400px;
     text-align: center;
 }
@@ -89,7 +89,7 @@ header h1 {
 
 .game-card p {
     margin: 0 0 4px 0;
-    font-size: 0.85rem;
+    font-size: 1rem; /* mismo tamaño que la descripción */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,26 +97,33 @@ header h1 {
 }
 
 .game-card p i {
-    font-size: 0.45rem; /* la mitad del tamaño normal */
+    font-size: 0.5rem; /* más pequeño */
     color: #888888; /* gris disimulado */
 }
 
 /* Botones */
 .game-card button {
-    padding: 5px 8px;
-    font-size: 0.9rem;
-    border-radius: 4px;
+    background: none;
     border: none;
-    background-color: #e69500;
-    color: white;
     cursor: pointer;
+    padding: 0;
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: #888888; /* gris */
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.game-card button i {
+    font-size: 0.6rem;
 }
 
 /* ========== Contact ========== */
 .contact {
     text-align: center;
     margin: 10px 0;
-    font-size: 1.5rem; /* igual que los títulos */
+    font-size: 1rem; /* mismo tamaño que los títulos */
 }
 
 .contact a {
@@ -127,7 +134,7 @@ header h1 {
 /* ========== Social ========== */
 .social {
     text-align: center;
-    margin: 5px 0 5px 0; /* más cerca del footer */
+    margin: 5px 0 5px 0;
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -137,7 +144,7 @@ header h1 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem; /* un poco más pequeños */
+    font-size: 1.2rem;
     color: white;
     text-decoration: none;
 }
@@ -150,13 +157,18 @@ header h1 {
 footer {
     text-align: center;
     margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+footer i {
+    font-size: 1rem;
+    color: #e69500;
 }
 
 footer p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
     font-size: 0.9rem;
 }
 
@@ -170,7 +182,7 @@ footer a {
 @media (max-width: 768px) {
     html, body {
         height: auto;
-        overflow: auto; /* scroll permitido */
+        overflow: auto;
     }
 
     header img {
@@ -184,7 +196,7 @@ footer a {
     }
 
     .description {
-        font-size: 1.3rem;
+        font-size: 1rem;
         max-width: 90%;
     }
 
@@ -202,16 +214,15 @@ footer a {
     }
 
     .game-card p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .game-card button {
         font-size: 0.85rem;
-        padding: 4px 6px;
     }
 
     .social {
-        margin: 10px 0 15px 0; /* padding extra entre social y footer */
+        margin: 10px 0 15px 0;
         gap: 8px;
     }
 
@@ -221,7 +232,7 @@ footer a {
 
     .contact {
         margin: 15px 0 5px 0;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     footer p {
