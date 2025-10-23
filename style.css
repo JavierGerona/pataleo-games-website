@@ -47,11 +47,12 @@ header h1 {
 /* Previous Works */
 .previous-works {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 0;
-    flex-shrink: 0;
+    justify-content: center; /* centra horizontalmente */
+    gap: 20px; /* separación entre cards */
+    flex-wrap: wrap; /* permite que bajen si no caben */
+    margin: 20px 0;
 }
+
 
 .section-title {
     font-size: 2rem;
@@ -60,16 +61,12 @@ header h1 {
     text-align: center;
 }
 
-.previous-works > .game-card {
-    display: inline-block;
-    margin: 10px;
-}
-
 .game-card {
     text-align: center;
     width: 200px;
     padding: 10px;
     background: none;
+    flex-shrink: 0; /* que no se encojan */
 }
 
 .game-card img {
