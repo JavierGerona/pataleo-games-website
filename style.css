@@ -36,6 +36,7 @@ header {
 header img {
     width: 100px;
     height: 100px;
+    margin-top: 20px; /* espacio extra arriba del logo */
 }
 
 header h1 {
@@ -46,7 +47,7 @@ header h1 {
 }
 
 .description {
-    font-size: 1rem;
+    font-size: 1.5rem; /* igual que los títulos */
     max-width: 400px;
     text-align: center;
 }
@@ -89,8 +90,18 @@ header h1 {
 .game-card p {
     margin: 0 0 4px 0;
     font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
 }
 
+.game-card p i {
+    font-size: 0.45rem; /* la mitad del tamaño normal */
+    color: #888888; /* gris disimulado */
+}
+
+/* Botones */
 .game-card button {
     padding: 5px 8px;
     font-size: 0.9rem;
@@ -105,7 +116,7 @@ header h1 {
 .contact {
     text-align: center;
     margin: 10px 0;
-    font-size: 0.9rem;
+    font-size: 1.5rem; /* igual que los títulos */
 }
 
 .contact a {
@@ -116,17 +127,17 @@ header h1 {
 /* ========== Social ========== */
 .social {
     text-align: center;
-    margin: 10px 0;
+    margin: 5px 0 5px 0; /* más cerca del footer */
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .social a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* un poco más pequeños */
     color: white;
     text-decoration: none;
 }
@@ -165,6 +176,7 @@ footer a {
     header img {
         width: 80px;
         height: 80px;
+        margin-top: 15px;
     }
 
     header h1 {
@@ -172,7 +184,7 @@ footer a {
     }
 
     .description {
-        font-size: 0.95rem;
+        font-size: 1.3rem;
         max-width: 90%;
     }
 
@@ -198,21 +210,18 @@ footer a {
         padding: 4px 6px;
     }
 
-    .social a {
-        font-size: 1.3rem;
-    }
-
-    /* Padding extra entre secciones para móvil */
-    .contact {
-        margin: 20px 0 10px 0;
-    }
-
     .social {
-        margin: 10px 0 10px 0;
+        margin: 10px 0 15px 0; /* padding extra entre social y footer */
+        gap: 8px;
     }
 
-    footer {
-        margin: 10px 0 20px 0;
+    .social a {
+        font-size: 1rem;
+    }
+
+    .contact {
+        margin: 15px 0 5px 0;
+        font-size: 1.3rem;
     }
 
     footer p {
