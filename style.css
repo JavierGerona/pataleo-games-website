@@ -47,12 +47,17 @@ header h1 {
 /* Previous Works */
 .previous-works {
     display: flex;
-    justify-content: center; /* centra horizontalmente */
-    gap: 20px; /* separación entre cards */
-    flex-wrap: wrap; /* permite que bajen si no caben */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     margin: 20px 0;
 }
 
+.previous-works .section-title {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 .section-title {
     font-size: 2rem;
@@ -111,14 +116,19 @@ header h1 {
 .social {
     text-align: center;
     margin: 20px 0;
+    flex-shrink: 0; /* que no se encojan */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .social a {
-    display: inline-block;
-    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     text-decoration: none;
-    vertical-align: middle;
+    font-size: 2rem; /* ajusta según convenga */
 }
 
 .social a:hover {
@@ -128,13 +138,23 @@ header h1 {
 /* Footer */
 footer {
     text-align: center;
-    margin: 10px 0;
+    margin: 20px 0;
+    flex-shrink: 0;
 }
 
 footer a {
     color: #e69500;
     text-decoration: none;
     margin-right: 6px;
+    font-size: 1.2rem;
+}
+
+footer p {
+    font-size: 1rem; /* asegúrate que se lea */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* separación entre icono y texto */
 }
 
 /* Ensure icons display */
