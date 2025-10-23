@@ -92,11 +92,17 @@ header img {
     text-decoration: none;
 }
 
-/* Redes sociales */
+/* Contenedor de iconos sociales */
+.social {
+    text-align: center;
+    font-size: 2rem; /* tamaño base para todos los iconos */
+    margin: 40px 0;
+}
+
+/* Cada enlace dentro de social */
 .social a {
     margin: 0 10px;
     color: white;
-    font-size: 1.5rem;
     text-decoration: none;
     vertical-align: middle;
 }
