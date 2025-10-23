@@ -52,7 +52,10 @@ header img {
 }
 
 .game-card img {
-    width: 100%;
+	width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover; /* Mantiene proporción */
     border-radius: 8px;
 }
 
@@ -92,4 +95,18 @@ header img {
 
 .fa-brands {
     font-family: "Font Awesome 6 Brands";
+}
+
+
+/* Contenedor de iconos de plataformas */
+.platform-icons {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.platform-icons img {
+    width: 24px;
+    height: 24px;
 }
