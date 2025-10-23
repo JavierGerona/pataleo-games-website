@@ -92,15 +92,14 @@ header img {
     text-decoration: none;
 }
 
-/* Contenedor de iconos sociales */
 .social {
     text-align: center;
-    font-size: 2rem; /* tamaño base para todos los iconos */
+    font-size: 2rem; /* tamaño base para los iconos */
     margin: 40px 0;
 }
 
-/* Cada enlace dentro de social */
 .social a {
+    display: inline-block; /* importante */
     margin: 0 10px;
     color: white;
     text-decoration: none;
@@ -112,5 +111,6 @@ header img {
 }
 
 .fa-brands {
-    font-family: "Font Awesome 6 Brands";
+    font-family: "Font Awesome 6 Brands"; /* asegura la fuente correcta */
+    display: inline-block; /* evita ancho/alto 0 */
 }
