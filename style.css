@@ -161,3 +161,28 @@ footer p {
 .fa-brands, .fa-solid {
     display: inline-block;
 }
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .game-card {
+        width: 150px; /* más pequeño en móvil */
+        margin-bottom: 15px;
+    }
+
+    .social a {
+        font-size: 1.5rem; /* iconos más pequeños */
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
