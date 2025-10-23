@@ -119,3 +119,32 @@ header img {
 .social i {
     font-size: 2rem; /* esto escala el icono correctamente */
 }
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.game-card button {
+    margin-top: 8px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #e69500;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; /* tamaño del icono */
+}
+
+.game-card button i {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer a {
+    color: #e69500;
+    text-decoration: none;
+    margin-right: 6px;
+}
