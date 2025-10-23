@@ -1,8 +1,9 @@
+/* Global */
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden; /* elimina scroll */
+    overflow: hidden; /* sin scroll en escritorio */
 }
 
 body {
@@ -15,23 +16,60 @@ body {
     line-height: 1.6;
 }
 
-header, .previous-works, .contact, .social, footer {
-    flex-shrink: 0; /* no se encojan */
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-shrink: 0;
+    text-align: center;
 }
 
+header img {
+    width: 128px;
+    height: 128px;
+}
+
+header h1 {
+    color: #e69500;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Previous Works */
 .previous-works {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin: 20px 20px; /* reducimos márgenes */
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    flex-shrink: 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.previous-works > .game-card {
+    display: inline-block;
+    margin: 10px;
 }
 
 .game-card {
-    padding: 15px;
     text-align: center;
     width: 200px;
-    background: none; /* eliminamos gris */
+    padding: 10px;
+    background: none;
 }
 
 .game-card img {
@@ -61,14 +99,19 @@ header, .previous-works, .contact, .social, footer {
     font-size: 1rem;
 }
 
-.section-title {
+/* Contact */
+.contact {
     text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 
-.contact, .social, footer {
+.contact a {
+    color: #e69500;
+    text-decoration: none;
+}
+
+/* Social */
+.social {
     text-align: center;
     margin: 20px 0;
 }
@@ -79,15 +122,25 @@ header, .previous-works, .contact, .social, footer {
     color: white;
     text-decoration: none;
     vertical-align: middle;
-    font-size: 2rem;
 }
 
 .social a:hover {
     color: #e69500;
 }
 
+/* Footer */
+footer {
+    text-align: center;
+    margin: 10px 0;
+}
+
 footer a {
     color: #e69500;
     text-decoration: none;
     margin-right: 6px;
+}
+
+/* Ensure icons display */
+.fa-brands, .fa-solid {
+    display: inline-block;
 }
