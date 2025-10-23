@@ -13,9 +13,10 @@ html, body {
 @media (min-width: 769px) {
     html, body {
         height: 100vh;
-        overflow: hidden;
         display: flex;
         flex-direction: column;
+        justify-content: space-between; /* rellena la pantalla */
+        overflow: hidden;
     }
 
     header, .previous-works, .contact, .social, footer {
@@ -56,7 +57,7 @@ header h1 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 10px 0;
+    align-items: center;
 }
 
 .previous-works .section-title {
@@ -199,6 +200,19 @@ footer a {
 
     .social a {
         font-size: 1.3rem;
+    }
+
+    /* Padding extra entre secciones para móvil */
+    .contact {
+        margin: 20px 0 10px 0;
+    }
+
+    .social {
+        margin: 10px 0 10px 0;
+    }
+
+    footer {
+        margin: 10px 0 20px 0;
     }
 
     footer p {
