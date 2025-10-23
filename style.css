@@ -94,12 +94,11 @@ header img {
 
 .social {
     text-align: center;
-    font-size: 2rem; /* tamaño base para los iconos */
     margin: 40px 0;
 }
 
 .social a {
-    display: inline-block; /* importante */
+    display: inline-block;
     margin: 0 10px;
     color: white;
     text-decoration: none;
