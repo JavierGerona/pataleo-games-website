@@ -83,4 +83,13 @@ header img {
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
+    vertical-align: middle;
+}
+
+.social a:hover {
+    color: #e69500;
+}
+
+.fa-brands {
+    font-family: "Font Awesome 6 Brands";
 }
